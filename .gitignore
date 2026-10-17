@@ -1,0 +1,16 @@
+.venv*/
+venv*/
+
+__pycache__/
+*.pyc
+
+lab_01_ru/data/wav/
+lab_01_ru/outputs/
+lab_02_ru/outputs/
+lab_03_ru/outputs/
+lab_04_ru/outputs/
+lab_05_ru/outputs/
+lab_06_ru/outputs/
+lab_07_ru/outputs/
+
+.ipynb_checkpoints/
