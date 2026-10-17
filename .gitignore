@@ -1,12 +1,17 @@
-# Virtual environment
-.venv-asr-lab01/
+.venv*/
+venv*/
 
-# Python
 __pycache__/
 *.pyc
 .ipynb_checkpoints/
 
-# Lab 01 generated files
 lab_01_ru/data/wav/*.wav
 lab_01_ru/outputs/*.png
 lab_01_ru/outputs/*.csv
+
+lab_02_ru/outputs/
+lab_03_ru/outputs/
+lab_04_ru/outputs/
+lab_05_ru/outputs/
+lab_06_ru/outputs/
+lab_07_ru/outputs/
