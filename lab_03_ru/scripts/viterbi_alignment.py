@@ -39,10 +39,10 @@ def viterbi_align(
     for t in range(1, frame_count):
         for state in range(start_state, final_state + 1):
             # При равенстве min() выбирает первый вариант: остаться в состоянии.
-            choices = [(dp[t-1][state], state)] # напишите ваш код здесь
+            choices = [(state, dp[t-1][state])] # напишите ваш код здесь
             if state > start_state:
-                choices.append((dp[t-1][state-1], state-1))
-            previous_state, previous_cost = min(choices) # напишите ваш код здесь
+                choices.append((state - 1, dp[t-1][state - 1]))
+            previous_state, previous_cost = min(choices, key=lambda x: x[1]) # напишите ваш код здесь
             if math.isfinite(previous_cost):
                 dp[t][state] = previous_cost + float(costs[t][state]) # напишите ваш код здесь
                 back[t][state] = previous_state # напишите ваш код здесь
